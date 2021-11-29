@@ -1,0 +1,25 @@
+install aws cli
+
+aws config (iam user permissions : lambda,s3,apigateway,cloudformation / admin)
+
+
+copy files to project (  lambda.js  ,  cloudformation.yaml -> sam-template.yaml ,  api-gateway-event.json , /scripts , /src/... )
+
+npm install aws-serverless-express --save 	// deprecated
+npm install @vendia/serverless-express --save	// new
+
+copy config(and modify) and scripts to package.json
+
+
+
+// not added yet  //     "config": "node ./scripts/configure.js",     "deconfig": "node ./scripts/deconfigure.js",
+// npm run config -- --account-id="572642556645" --bucket-name="poc-express-test-api" --region="us-west-2" --function-name="poc-express-test1"
+
+npm run setup
+
+// npm run package-deploy
+
+locally
+// npm run start
+
+// need to update api-gateway-event.json for npm run local
